@@ -30,6 +30,10 @@ body{
   margin-left: 18%;
   padding-top: 25px;
 }
+#home4{
+  width: 60vw;
+  height: 60vh;
+}
 
 #home1 {
   
@@ -120,14 +124,17 @@ body{
 justify-content: space-evenly;
 background-color: #101010;
 border-top: 2px solid white;
+text-wrap: wrap;
+
 
 }
 #footers{
  text-align: center;
+ 
 
 flex-direction: column;
 
-width: 400px;
+width: 40%;
 color: azure;
 }
 #footeri{
@@ -230,7 +237,7 @@ textarea{
 }
 #provide{
   display: grid;
-  width: 800px;
+  width: 60%;
   grid-template-columns: auto auto auto;
   gap: 20px;
   align-items: center;
@@ -239,10 +246,38 @@ textarea{
   border: 1px solid #000;
   border-radius: 20%;
   background-color: #8d8b6b;
-
-  
+}
+#portfoliow{
+  margin-right: 40;
+  width: 40%;
+  height: 40%;
 
 }
+#portfoliow1{
+  
+  width: 40%;
+  height: auto;
+}
+#table{
+  width: 100vw;
+  height: 100vh;
+}
+@media (width<600px) {
+  #footer,#nav,#provide{
+    display: grid;
+    grid-template-columns: auto auto;
+
+  }
+}
+@media (width<380px) {
+  #footer{
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 100px;
+
+  }
+}
+
 
 
 

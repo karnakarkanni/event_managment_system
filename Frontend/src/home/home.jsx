@@ -30,7 +30,7 @@ function Home(){
        
 <div id="home" >
 <div id="home3" align="center" >
-      <img src={images[currentIndex]} style={{width:1000}}/>
+      <img src={images[currentIndex]} id="home4"/>
     </div>
 
 <div id="home1"  >

@@ -26,7 +26,7 @@ function Footer(){
             <p>terms & Conditions</p>
             <p>Privacy policy</p>
         </div>
-        <div id="footers">
+        <div id="footers" style={{paddingRight:20}}>
             <h2>Contact Details</h2>
             <p>Email:ruchitha@123.com</p>
             <p>Email:karnakarmaratikanni@gamil.com</p>

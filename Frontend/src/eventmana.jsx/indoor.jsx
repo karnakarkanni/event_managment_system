@@ -88,7 +88,7 @@ function Indoor() {
         </div>
 
         <h1>Venue Details</h1>
-        <table border={2} align="center" style={{ backgroundColor: "#d23a7ed1" }}>
+        <table border={2} align="center" id="table1" style={{ backgroundColor: "#d23a7ed1" }}>
           <thead>
             <tr>
               <th>S.NO</th>
@@ -105,10 +105,10 @@ function Indoor() {
         <div>
           <h1>Portfolio</h1>
           <div id="Portfolio">
-            <img style={{ marginRight: 40 }} src="https://leisureopportunities.co.uk/images/HIGH22018_889414.jpg" alt="" width={550} height={370} />
-            <img src="https://content.jdmagicbox.com/v2/comp/hyderabad/w5/040pxx40.xx40.240214113806.l2w5/catalogue/moon-light-events-planner-kukatpally-hyderabad-birthday-party-decorators-f6e6kjivpx.jpg" width={500} height={370} alt="" />
-            <img style={{ marginRight: 40 }} src="https://glimageurl.golocall.com/golocal-post/image/155696_1476958366.jpeg" alt="" width={555} height={370} />
-            <img src="https://lh5.googleusercontent.com/proxy/U47y8_8HB4T3IGrTq8aLyb7mvbHtMoRG5fgKPx1OnadMmRBGrSUbtLhKQXUE3RondLGoaq13Zn5cFIjWXyDaykiaJe_QbDFpfbEE2hz_itTaOS7alvigY8-WZA" width={500} height={370} alt="" />
+            <img style={{ marginRight: 40 }} src="https://leisureopportunities.co.uk/images/HIGH22018_889414.jpg" alt=""  id="portfoliow1"/>
+            <img src="https://content.jdmagicbox.com/v2/comp/hyderabad/w5/040pxx40.xx40.240214113806.l2w5/catalogue/moon-light-events-planner-kukatpally-hyderabad-birthday-party-decorators-f6e6kjivpx.jpg"  id="portfoliow" alt="" />
+            <img style={{ marginRight: 40 }} src="https://glimageurl.golocall.com/golocal-post/image/155696_1476958366.jpeg" alt="" id="portfoliow" />
+            <img src="https://lh5.googleusercontent.com/proxy/U47y8_8HB4T3IGrTq8aLyb7mvbHtMoRG5fgKPx1OnadMmRBGrSUbtLhKQXUE3RondLGoaq13Zn5cFIjWXyDaykiaJe_QbDFpfbEE2hz_itTaOS7alvigY8-WZA"  id="portfoliow" alt="" />
           </div>
         </div>
 
