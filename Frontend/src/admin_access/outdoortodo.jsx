@@ -86,7 +86,7 @@ function OutdoorTodo() {
       <div id="admin">
         <h1 style={{ margin: 0 }}>Outdoor Admin Access</h1>
         <form onSubmit={sub}>
-          <table border={2} align="center" style={{ marginTop: 30 }}>
+          <table border={2} align="center" style={{ marginTop: 30 }} className="table-container">
             <tbody id="textarea">
               <tr>
                 <td><input type="text" name="id" placeholder="ID" value={data.id} onChange={handleInputChange} id="textarea" /></td>

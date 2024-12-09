@@ -33,6 +33,7 @@ body{
 #home4{
   width: 60vw;
   height: 60vh;
+  
 }
 
 #home1 {
@@ -272,12 +273,32 @@ textarea{
 @media (width<380px) {
   #footer{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns:auto;
     padding-left: 100px;
 
   }
 }
 
+.table-container {
+  overflow-x: auto; /* Allows horizontal scroll on smaller devices */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #555;
+  color: #fff;
+}
 
 
 

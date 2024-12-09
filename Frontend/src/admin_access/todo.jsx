@@ -92,8 +92,8 @@ function Todo() {
     <div id="admin1">
     <div id="admin">
         <h1 style={{margin:0 }}>Indoor Admin Access</h1>
-      <form onSubmit={sub}>
-        <table border={2} align="center" style={{marginTop:30}} >
+      <form onSubmit={sub} >
+        <table border={2} align="center" style={{marginTop:30}} className="table-container" >
           <tr>
             <td> <textarea name="id" placeholder="ID" value={data.id} onChange={handleInputChange}/></td>
             <td><textarea name="venue" placeholder="Venue name" value={data.venue} onChange={handleInputChange}/></td>
