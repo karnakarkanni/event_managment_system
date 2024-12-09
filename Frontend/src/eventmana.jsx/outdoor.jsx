@@ -29,7 +29,7 @@ function Outdoor() {
 
   const hello = () => {
     axios
-      .get("http://localhost:3204/outdoor")
+      .get("https://event-managment-system-4tvs.onrender.com/outdoor")
       .then((response) => {
         setUsers(response.data);
         console.log(response);

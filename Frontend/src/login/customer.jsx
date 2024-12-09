@@ -6,7 +6,7 @@ function Customer({ setIsLoggedIn }) {
     const [users, setUsers] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get("http://localhost:3202/register")
+        axios.get("https://event-managment-system-4tvs.onrender.com/register")
             .then((res) => {
                 setUsers(res.data);
             })

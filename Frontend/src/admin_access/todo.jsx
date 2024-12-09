@@ -15,7 +15,7 @@ function Todo() {
 
   const hello = () => {
     axios
-      .get("http://localhost:3203/indoor")
+      .get("https://event-managment-system-4tvs.onrender.com/indoor")
       .then((response) => {
         setUsers(response.data);
         console.log(response);
@@ -43,7 +43,7 @@ function Todo() {
   const sub = async (e) => {
    e.preventDefault();
    try {
-     const response = await axios.post("http://localhost:3203/indoor", data, {
+     const response = await axios.post("https://event-managment-system-4tvs.onrender.com/indoor", data, {
        headers: {
          "Content-Type": "application/json",
        },
@@ -59,7 +59,7 @@ function Todo() {
  };
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:3203/indoor/${id}`)
+      .delete(`https://event-managment-system-4tvs.onrender.com/indoor/${id}`)
       .then((response) => {
         console.log("Deleted successfully");
         alert("Deleted successfully");

@@ -28,7 +28,7 @@ function Indoor() {
 
   const hello = () => {
     axios
-      .get("http://localhost:3203/indoor")
+      .get("https://event-managment-system-4tvs.onrender.com/indoor")
       .then((response) => {
         setUsers(response.data); 
       })

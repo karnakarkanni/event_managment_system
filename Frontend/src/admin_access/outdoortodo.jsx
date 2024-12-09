@@ -12,7 +12,7 @@ function OutdoorTodo() {
   });
   const hello = () => {
     axios
-      .get("http://localhost:3204/outdoor")
+      .get("https://event-managment-system-4tvs.onrender.com/outdoor")
       .then((response) => {
         setUsers(response.data);
         console.log(response);
@@ -37,7 +37,7 @@ function OutdoorTodo() {
   const sub = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3204/outdoor", data, {
+      const response = await axios.post("https://event-managment-system-4tvs.onrender.com/outdoor", data, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -54,7 +54,7 @@ function OutdoorTodo() {
   };
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:3204/outdoor/${id}`)
+      .delete(`https://event-managment-system-4tvs.onrender.com/outdoor/${id}`)
       .then((response) => {
         console.log("Deleted successfully");
         alert("Deleted successfully");

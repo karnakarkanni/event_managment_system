@@ -22,7 +22,7 @@ function Registration(){
             return;
         }
         try {
-            const response = await axios.post("http://localhost:3202/register", register, {
+            const response = await axios.post("https://event-managment-system-4tvs.onrender.com/register", register, {
                 headers: {
                     "Content-Type": "application/json", 
                 },
