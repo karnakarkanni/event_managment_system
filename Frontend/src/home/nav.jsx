@@ -9,7 +9,7 @@ function Nav(){
             <ul id="k" ><Link to={"/service"} id="link">Events</Link>   </ul>
             <ul id="k"> <Link to={"/about"} id="link">About us</Link>   </ul>
             <ul id="k"> <Link to={"/foot"}id="link">address</Link>    </ul>
-            <ul id="k"> <Link to={"/login"}id="link">Login</Link>  </ul>
+            <ul id="k"> <Link to={"/"}id="link">Login</Link>  </ul>
             
         </div>
     </nav>
