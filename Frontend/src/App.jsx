@@ -39,7 +39,7 @@ function App() {
           <Route path='/home/service' element={isLoggedIn ? <Indoor /> : <Navigate to="/login" />} />
           <Route path='/home/service1' element={isLoggedIn ? <Outdoor /> : <Navigate to="/login" />} />
 
-          <Route path='/login' element={<Customer setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path='/' element={<Customer setIsLoggedIn={setIsLoggedIn} />} />
           <Route path='/Registration' element={<Registration />} />
           <Route path='/admin' element={isLoggedIn ? <Todo /> : <Navigate to="/login" />} />
           <Route path='/home/service/seemore'  element={<Indoorsee />}/>
