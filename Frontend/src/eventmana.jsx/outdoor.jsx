@@ -79,6 +79,7 @@ function Outdoor() {
       <div>
         
       </div>
+      <div style={{ overflowX: 'auto' }}>
       <h1>Venue Details </h1>
       <table border={2} align="center" style={{ backgroundColor: "#d23a7ed1" }}>
         <thead>
@@ -95,6 +96,7 @@ function Outdoor() {
         </thead>
         <tbody>{foundUser}</tbody>
       </table>
+      </div>
       <div>
           <h1>Portfolio</h1>
       <div id="Portfolio">

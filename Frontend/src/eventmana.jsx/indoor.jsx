@@ -86,9 +86,9 @@ function Indoor() {
             Our corporate event services ensure a professional and memorable experience. We specialise in delivering high-quality hospitality, and audio-visual management tailored to your corporate needs.
           </h3>
         </div>
-
+<div style={{ overflowX: 'auto' }}>
         <h1>Venue Details</h1>
-        <table border={2} align="center" id="table1" style={{ backgroundColor: "#d23a7ed1" }}>
+        <table border={2} align="center"  style={{ backgroundColor: "#d23a7ed1" }}>
           <thead>
             <tr>
               <th>S.NO</th>
@@ -101,7 +101,7 @@ function Indoor() {
           </thead>
           <tbody>{foundUser}</tbody>
         </table>
-
+        </div>
         <div>
           <h1>Portfolio</h1>
           <div id="Portfolio">

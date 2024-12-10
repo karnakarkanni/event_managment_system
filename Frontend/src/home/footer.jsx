@@ -13,6 +13,15 @@ function Footer(){
                     <span><i class="bi-youtube"></i></span></div>
                 
         </div>
+        <div id="footers"  >
+            <h2>Contact Details</h2>
+            <p>Email:ruchitha@123.com</p>
+            <p>Email:karnakar@gamil.com</p>
+            <p>+91 9494253381</p>
+            <p>+91 6302948618</p>
+
+            
+        </div>
         <div id="footers">
             <h2>Usefll links</h2>
             <ul id="k"><Link to={"/home"} id="link">Home</Link>  </ul>
@@ -25,15 +34,6 @@ function Footer(){
             <h2>Other Links</h2>
             <p>terms & Conditions</p>
             <p>Privacy policy</p>
-        </div>
-        <div id="footers" style={{paddingRight:20}}>
-            <h2>Contact Details</h2>
-            <p>Email:ruchitha@123.com</p>
-            <p>Email:karnakarmaratikanni@gamil.com</p>
-            <p>+91 9494253381</p>
-            <p>+91 6302948618</p>
-
-            
         </div>
     </footer>
     </>)

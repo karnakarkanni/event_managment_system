@@ -123,19 +123,18 @@ body{
 }
 #footer{
   display: flex;
+  width: 100%;
 justify-content: space-evenly;
 background-color: #101010;
 border-top: 2px solid white;
 text-wrap: wrap;
-
-
-
+/* align-items: center; */
+/* text-align: center; */
 }
 #footers{
  text-align: center;
 flex-direction: column;
 
-width: 40%;
 color: azure;
 }
 #footeri{
@@ -259,10 +258,7 @@ textarea{
   width: 40%;
   height: auto;
 }
-#table{
-  width: 100vw;
-  height: 100vh;
-}
+
 @media (width<600px) {
   #footer,#nav,#provide{
     display: grid;
@@ -270,25 +266,22 @@ textarea{
 
   }
 }
-@media (width<380px) {
+@media (width<400px) {
   #footer{
     display: grid;
     grid-template-columns:auto;
     
-
   }
-  
   #provide{
-      display: grid;
-      grid-template-columns:  auto;
-  
-    }
-
+    display: grid;
+    grid-template-columns:  auto;
+  }
+ 
 }
 
 .table-container {
-  overflow-x: auto; /* Allows horizontal scroll on smaller devices */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
 }
 
 table {
@@ -298,24 +291,28 @@ table {
 
 th, td {
   border: 1px solid #333;
-  text-align: left;
+  /* text-align: left; */
+  text-wrap: wrap;
+
 }
 
 th {
   background-color: #555;
   color: #fff;
+
 }
 
 @media (width<680px) {
   table{
- 
     width: 20%;
   }
 }
-@media (width<380px) {
+@media (width<450px) {
   table{
  
-    width: 20%;
+    width:1rem;
+    
+
   }
 }
 
