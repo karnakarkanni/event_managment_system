@@ -32,8 +32,8 @@ function Indoorsee() {
 
   return (
     <>
-      <div align="center">
-        <h1>Services</h1>
+      <div align="center" id="seemore">
+        <h1 style={{display:"inline-block"}}>Services</h1>
         <table border={2} style={{ marginBottom: 20 }}>
           <thead>
             <tr>

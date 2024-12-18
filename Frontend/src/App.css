@@ -7,15 +7,15 @@ body{
   display: flex;
   justify-content:space-evenly;
   align-items: center;
-  background-color:rgb(14, 14, 16);
+  background-color:#442c2e;
   color: rgb(40, 13, 13);
   padding: 10px;
   font-weight: bolder;
   font-size: larger;
 }
 #home {
-  background-color:  rgba(196, 129, 169, 0.442);
-  background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+  background-color:  #FEDBD0;
+  /* background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg); */
   /* background-image: url(https://img.stablecog.com/insecure/1920w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vMTIxZTcxNmUtYjFmNC00MzkzLTkxOWQtYzVhNjM4MjY2MTU5LmpwZWc.webp); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,8 +50,8 @@ body{
 }
 
 #services {
-  background-color:  rgba(196, 129, 169, 0.442);
-  background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+  background-color:  #FEDBD0;
+  /* background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -97,7 +97,7 @@ body{
   margin-bottom: 6%;
 }
 #about{
-  background-color: #cebdceb5;
+  background-color: #FEDBD0;
   background-image: url(https://vajraevents.com/wp-content/uploads/2024/06/Untitled-1899-x-510-px-1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,21 +109,21 @@ body{
 #about1{
  
   background-color: rgba(246, 7, 150, 0.442);
-  color: rgb(248, 248, 248);
+  color: rgb(31, 7, 7);
   width: 40%;
   text-align: center;
   border-radius: 2%;
 }
 #about2{
   padding-top: 20px;
-  background-color: rgba(196, 129, 169, 0.442);
+  background-color: #FEDBD0;
   padding: 30px;
 }
 #footer{
   display: flex;
   width: 100%;
 justify-content: space-evenly;
-background-color: #101010;
+background-color: #442c2e;
 border-top: 2px solid white;
 text-wrap: wrap;
 }
@@ -142,10 +142,11 @@ color: azure;
   text-decoration: none;
 }
 #Customer{
+  background-color: #FEDBD0;
   
-  background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+  /* background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg); */
   height: 90vh;
-  background-color: cadetblue;
+ 
   display: flex;
   gap: 20PX;
   justify-content: center;
@@ -169,8 +170,8 @@ color: azure;
 }
 
 #admin {
-  background-color:  rgba(196, 129, 169, 0.442);
-  background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+  background-color:  #FEDBD0;
+  /* background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg); */
   color: rgb(16, 10, 10);  
   height: 100%; 
   text-align: center; 
@@ -242,7 +243,11 @@ textarea{
   width: 40%;
   height: auto;
 }
-
+#seemore{
+  background-color: #FEDBD0;
+ padding: 5%;
+ /* padding-top: 0; */
+}
 @media (width<600px) {
   #footer,#nav,#provide{
     display: grid;
