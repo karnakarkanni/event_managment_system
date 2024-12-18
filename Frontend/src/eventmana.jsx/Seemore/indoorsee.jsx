@@ -121,9 +121,7 @@ function Indoorsee() {
             </tr>
           </tbody>
         </table>
-
         <h1>Booking Details</h1>
-
         <p>
           <h4 style={{ display: "inline" }}>Venue name:</h4>{data.venue}
         </p>
@@ -151,14 +149,10 @@ function Indoorsee() {
             <option value="day">Day</option>
             <option value="Night">Night</option>
           </select>
-      
-
           <label htmlFor="">
             <h4 style={{ display: "inline" }}>Phone Number:</h4>
             <input type="number" required minLength={10} />
           </label>
-      
-          
           <label htmlFor="">
             <h4 style={{ display: "inline" }}>Email id:</h4>
             <input type="email" required />
@@ -172,5 +166,4 @@ function Indoorsee() {
     </>
   );
 }
-
 export default Indoorsee;

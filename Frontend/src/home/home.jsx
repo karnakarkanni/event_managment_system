@@ -2,11 +2,11 @@ import Service from "./event";
 // import image1 from "../image/image1.jpg"
 import { useEffect,useState } from "react";
 const images = [
+  "https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481511.jpg?t=st=1734538716~exp=1734542316~hmac=d92dedaf9627a74cc58957591db18a46cad481eafd5a46298f8a5b146c8c541a&w=996",
     "https://www.marriagevenue.in/images/banner2.jpg",
-    'https://watermark.lovepik.com/photo/20211122/large/lovepik-wedding-background-board-picture_500664172.jpg',
-    "https://i.pinimg.com/736x/20/c4/9e/20c49ec31c7a13a1cadc31fc4beb765f.jpg",
+    'https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481511.jpg?t=st=1734538716~exp=1734542316~hmac=d92dedaf9627a74cc58957591db18a46cad481eafd5a46298f8a5b146c8c541a&w=996',
    
-   
+    "https://img.freepik.com/free-photo/luxurious-dinner-hall-with-large-crystal-chandelier_8353-565.jpg?t=st=1734539282~exp=1734542882~hmac=05e7676280d7d1d6059bad7d677c01bb860323b1c399fc0e2f41c2671fdd19dd&w=996"
   ];
 function Home(){
       const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,11 +34,11 @@ function Home(){
     </div>
 
 <div id="home1"  >
-    <h1>Event management system</h1>
-    <h5 >let's make your memories....</h5>
-    <h1>Thing perish, but  </h1>
-    <h1>experiences that </h1>
-    <h1>Turn in memories don't</h1>
+    <h1 id="home11">Event management system</h1>
+    <h5 id="home11">let's make your memories....</h5>
+    <h1 id="home11">Thing perish, but  </h1>
+    <h1 id="home11">experiences that </h1>
+    <h1 id="home11">Turn in memories don't</h1>
 </div  >
 </div>
       
