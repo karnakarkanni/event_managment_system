@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Nav isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
+      {isLoggedIn && <Nav isLoggedIn={isLoggedIn} handleLogout={handleLogout}/>}
         <Routes>
           <Route path='/home' element={isLoggedIn ? <Home /> : <Customer setIsLoggedIn={setIsLoggedIn} />} />
           <Route path='/service' element={isLoggedIn ? <Service /> : <Customer setIsLoggedIn={setIsLoggedIn} />} />
@@ -42,7 +42,7 @@ function App() {
           <Route path='/' element={<Customer setIsLoggedIn={setIsLoggedIn} />} />
           <Route path='/Registration' element={<Registration />} />
           <Route path='/admin' element={isLoggedIn ? <Todo /> : <Customer setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path='/home/service/seemore' element={<Indoorsee />} />
+          <Route path='/home/service/seemore' element={isLoggedIn ?<Indoorsee />:<Customer setIsLoggedIn={setIsLoggedIn} /> }/>
         </Routes>
       </BrowserRouter>
     </>

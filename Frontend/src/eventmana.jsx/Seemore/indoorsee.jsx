@@ -28,6 +28,7 @@ function Indoorsee() {
   };
   var clk=()=>{
     alert("booking is Successfully")
+    
   }
 
   return (

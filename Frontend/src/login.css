@@ -79,16 +79,10 @@
   .container {
     flex-direction: column;
     box-shadow: none;
+    align-items: center;
   }
 
-  .col-left,
-  .col-right {
-    width: 100%;
-    margin: 0;
-    padding: 30px;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
+  
 }
 
 .login-text {

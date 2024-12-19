@@ -3,8 +3,8 @@ import About from "./about";
 function Service() {
     return (
         <>
-            <div id="services">
-                <h1 id="servicesh">Events</h1>
+            <div id="services" style={{paddingBottom:40}}>
+                <h1 id="servicesh" >Events</h1>
                 
                  <div id="row">
                    <Link to={"/home/service"} id="link"><div id="cards">
@@ -49,7 +49,7 @@ function Service() {
 
                  <Link to={"/home/service"} id="link">   <div id="cards">
                     <img src="https://media.istockphoto.com/id/1482845206/photo/male-asking-a-question-to-a-speaker-during-a-q-and-a-session-at-an-international-tech.jpg?s=612x612&w=0&k=20&c=9Ah3K3fqMnadIprbybdLyGWhXcEcVEKfPWl9Q6wDPfA=" width={400} height={400} id="card1" alt="" />
-                        <h2 align="center">Mice Events</h2>
+                        <h2 align="center" >Mice Events</h2>
                     </div></Link>
                 </div>
             </div>
