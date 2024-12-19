@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 function Footer(){
 
     return(<>
-     <footer id="footer">
+    
+     <footer id="footer" >
+<div id="footer1">
         <div id="footers" >
             <h2>event mangement system</h2>
             <p>Our team excels in delivering top-notch events with precision and excellence.</p>
@@ -35,6 +37,8 @@ function Footer(){
             <p>terms & Conditions</p>
             <p>Privacy policy</p>
         </div>
+        </div>
+     
     </footer>
     </>)
 }
