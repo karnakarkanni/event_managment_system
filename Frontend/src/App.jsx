@@ -21,12 +21,11 @@ function App() {
     if (loginStatus === 'true') {
       setIsLoggedIn(true);
     }
+
   }, []);
-  
 
-    
-  
 
+  
   return (
     <>
       <BrowserRouter>
@@ -38,7 +37,6 @@ function App() {
           <Route path='/foot' element={isLoggedIn ? <Footer /> : <Navigate to="/login" />} />
           <Route path='/home/service' element={isLoggedIn ? <Indoor /> : <Navigate to="/login" />} />
           <Route path='/home/service1' element={isLoggedIn ? <Outdoor /> : <Navigate to="/login" />} />
-
           <Route path='/' element={<Customer setIsLoggedIn={setIsLoggedIn} />} />
           <Route path='/Registration' element={<Registration />} />
           <Route path='/admin' element={isLoggedIn ? <Todo /> : <Navigate to="/login" />} />

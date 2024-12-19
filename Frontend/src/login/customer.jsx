@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 function Customer({ setIsLoggedIn }) {
     const [users, setUsers] = useState([]);
     const navigate = useNavigate();
+
     useEffect(() => {
         axios.get("https://event-managment-system-4tvs.onrender.com/register")
             .then((res) => {
@@ -14,6 +15,7 @@ function Customer({ setIsLoggedIn }) {
                 console.error("Error fetching users data:", error);
             });
     }, []);
+
     const userLogin = (e) => {
         e.preventDefault();
         const email = e.target[0].value;
@@ -31,12 +33,16 @@ function Customer({ setIsLoggedIn }) {
             navigate("/admin");
         } 
         else if(foundUser1){
-            alert("password is incorrect")
-
+            alert("password is incorrect");
         }
         else if(!foundUser) {
             alert("please register");
         }
+    };
+    const guestLogin = () => {
+        localStorage.setItem('isLoggedIn', 'true');
+        setIsLoggedIn(true);
+        navigate("/home");
     };
 
     return (
@@ -49,8 +55,10 @@ function Customer({ setIsLoggedIn }) {
                         <input type="password" placeholder="Password" id="k2" className="input" required /><br /><br />
                         <input type="submit" id="k3" value="Login" className="input"/><br /><br />
                         <span>Not a member? <Link to="/Registration">Register here</Link></span><br /><br />
-                        <span> <Link to="/home">Login as a Guest</Link> </span><br /><br />
                     </form>
+                    <span onClick={guestLogin} style={{ cursor: 'pointer', color: 'blue' }}>
+                        Login as a Guest
+                    </span><br /><br />
                 </div>
             </div>
         </>
@@ -58,4 +66,5 @@ function Customer({ setIsLoggedIn }) {
 }
 
 export default Customer;
+
 
