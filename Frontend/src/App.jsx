@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Nav from './home/nav';
@@ -17,36 +16,30 @@ import Indoorsee from './eventmana.jsx/Seemore/indoorsee';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
-    const loginStatus = localStorage.getItem('isLoggedIn');
-    if (loginStatus === 'true') {
-      setIsLoggedIn(true);
-    }
+    const loginStatus = localStorage.getItem('isLoggedIn') === 'true';
+    setIsLoggedIn(loginStatus);
+  }, []); 
 
-  }, []);
-
-
-  
   return (
-    <>
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path='/home' element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
-          <Route path='/service' element={isLoggedIn ? <Service /> : <Navigate to="/login" />} />
-          <Route path='/about' element={isLoggedIn ? <About /> : <Navigate to="/login" />} />
-          <Route path='/foot' element={isLoggedIn ? <Footer /> : <Navigate to="/login" />} />
-          <Route path='/home/service' element={isLoggedIn ? <Indoor /> : <Navigate to="/login" />} />
-          <Route path='/home/service1' element={isLoggedIn ? <Outdoor /> : <Navigate to="/login" />} />
-          <Route path='/' element={<Customer setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path='/Registration' element={<Registration />} />
-          <Route path='/admin' element={isLoggedIn ? <Todo /> : <Navigate to="/login" />} />
-          <Route path='/home/service/seemore'  element={<Indoorsee />}/>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      <Routes>
+        <Route 
+          path='/' 
+          element={isLoggedIn ? <Navigate to="/home" /> : <Customer setIsLoggedIn={setIsLoggedIn} />} 
+        />
+        <Route path='/home' element={isLoggedIn ? <Home /> : <Customer />} />
+        <Route path='/service' element={isLoggedIn ? <Service /> : <Navigate to="/" />} />
+        <Route path='/about' element={isLoggedIn ? <About /> : <Navigate to="/" />} />
+        <Route path='/foot' element={isLoggedIn ? <Footer /> : <Navigate to="/" />} />
+        <Route path='/home/service' element={isLoggedIn ? <Indoor /> : <Navigate to="/" />} />
+        <Route path='/home/service1' element={isLoggedIn ? <Outdoor /> : <Navigate to="/" />} />
+        <Route path='/Registration' element={<Registration />} />
+        <Route path='/admin' element={isLoggedIn ? <Todo /> : <Navigate to="/" />} />
+        <Route path='/home/service/seemore' element={<Indoorsee />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-
