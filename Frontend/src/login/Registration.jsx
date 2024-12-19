@@ -49,7 +49,7 @@ function Registration(){
         <input type="password" placeholder="Password" className="input" name="password" id="k3" value={register.password} onChange={ch}/><br /><br />
         <input type="password" placeholder="confirm password" className="input" name="confirm_password" id="k4" value={register.confirm_password} onChange={ch}/><br /><br />
         <input type="submit" value="submit" className="input" id="k5"/><br /><br />
-        <span>Already have an account? <Link to={"/login"} >Sign in here</Link></span>
+        <span>Already have an account? <Link to={"/"} >Sign in here</Link></span>
         </form>
     </div>
     </div>

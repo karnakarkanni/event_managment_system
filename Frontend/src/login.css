@@ -13,6 +13,7 @@
   flex-direction: column;
 }
 
+
 .container {
   position: relative;
   width: 100%;
@@ -39,23 +40,7 @@
   font-weight: 600;
 }
 
-/* * * * * Login Form CSS * * * * */
-/* h2 {
-  margin: 0 0 15px 0;
-  font-size: 30px;
-  font-weight: 700;
-}
 
-h2 img {
-  width: 120px;
-}
-
-p {
-  margin: 0 0 20px 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-} */
 
 .btn {
   display: inline-block;

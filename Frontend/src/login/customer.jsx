@@ -18,7 +18,7 @@ function Customer({ setIsLoggedIn }) {
         e.preventDefault();
         const email = e.target[0].value;
         const password = e.target[1].value;
-        console.log(email,password)
+        console.log(email, password)
 
         const foundUser = users.find(user => user.email === email && user.password === password);
         const foundUser1 = users.find(user => user.email === email);
@@ -50,10 +50,12 @@ function Customer({ setIsLoggedIn }) {
             <div className="container">
                 <div className="col-left">
                     <div className="login-text">
-                        <h2>Logo</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget eros dapibus, ultricies tellus vitae, consectetur tortor.
-                        </p>
+                        {/* <h2>Logo</h2> */}
+                        <h1 id="home11">Event management system</h1>
+                        <h5 id="home11">let's make your memories....</h5>
+                        <h5 id="home11">Thing perish, but  </h5>
+                        <h5 id="home11">experiences that </h5>
+                        <h5 id="home11">Turn in memories don't</h5>
                     </div>
                 </div>
                 <div className="col-right">
@@ -61,7 +63,7 @@ function Customer({ setIsLoggedIn }) {
                         <h2>Login</h2>
                         <form onSubmit={userLogin}>
                             <p>
-                                <input type="email" placeholder="Email"  />
+                                <input type="email" placeholder="Email" />
                             </p>
                             <p>
                                 <input type="password" placeholder="Password" />
@@ -79,7 +81,7 @@ function Customer({ setIsLoggedIn }) {
                     </div>
                 </div>
             </div>
-           
+
         </div>
     );
 }
