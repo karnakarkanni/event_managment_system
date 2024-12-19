@@ -5,6 +5,10 @@ function Nav({ isLoggedIn, handleLogout }) {
     <>
       <nav>
         <div id="nav">
+            <ul id="k">
+                <img src="https://www.svgrepo.com/show/414725/peace-earth-global.svg" alt="" style={{width:40,height:30}} />
+
+            </ul>
           <ul id="k">
             <Link to={"/home"} id="link">Home</Link>
           </ul>
@@ -14,9 +18,9 @@ function Nav({ isLoggedIn, handleLogout }) {
           <ul id="k">
             <Link to={"/about"} id="link">About us</Link>
           </ul>
-          <ul id="k">
+          {/* <ul id="k">
             <Link to={"/foot"} id="link">Address</Link>
-          </ul>
+          </ul> */}
           <ul id="k">
             {isLoggedIn ? (
               <span 
@@ -24,7 +28,7 @@ function Nav({ isLoggedIn, handleLogout }) {
                 style={{ cursor: "pointer" }} 
                 onClick={handleLogout}
               >
-                Logout
+                logout
               </span>
             ) : (
               <Link to={"/"} id="link">Login</Link>
