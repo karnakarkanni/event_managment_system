@@ -131,17 +131,14 @@ background-color: #442c2e;
 padding-top: 20px;
 
 }
-#footer1{
-  align-items: center;
-  
-  display: flex;
-justify-content: space-evenly;
-background-color: #442c2e;
 
-text-wrap: wrap;
-}
 #footers{
  text-align: center;
+ display: flex;
+ justify-content: space-evenly;
+ background-color: #442c2e;
+ 
+ text-wrap: wrap;
 flex-direction: column;
 
 color: azure;
